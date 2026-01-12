@@ -1,0 +1,7 @@
+import { i18nBuilder } from "keycloakify/login/i18n";
+
+const { useI18n, ofTypeI18n } = i18nBuilder.withCustomTranslations({}).build();
+
+type I18n = typeof ofTypeI18n;
+
+export { useI18n, type I18n };

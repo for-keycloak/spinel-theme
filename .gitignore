@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist_keycloak/
+storybook-static/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Vite generated files
+vite.config.js
+vite.config.d.ts
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Docker local overrides
+compose.override.yaml
+docker-compose.override.yaml
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Keycloakify
+keycloak-theme/
+public/keycloakify-dev-resources/
+
+# Claude Code
+.claude/
+
+# npm (using yarn instead)
+package-lock.json
+
+# Playwright
+playwright-report/
+test-results/

@@ -1,0 +1,39 @@
+{
+  "name": "spinel",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build-keycloak-theme": "yarn build && keycloakify build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "email-preview": "email preview ./src/email/templates",
+    "test": "playwright test",
+    "test:screenshots": "playwright test tests/screenshots.spec.ts",
+    "test:update": "playwright test --update-snapshots"
+  },
+  "dependencies": {
+    "keycloakify": "^11.13.9",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.57.0",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^25.0.6",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "jsx-email": "^2.8.4",
+    "keycloakify-emails": "^3.3.1",
+    "storybook": "^8.6.14",
+    "storybook-dark-mode": "^4.0.2",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
