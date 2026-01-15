@@ -3130,10 +3130,10 @@ keycloakify-emails@^3.3.1:
     esbuild "^0.24.0"
     properties-parser "^0.6.0"
 
-keycloakify@^11.13.11:
-  version "11.13.11"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.13.11.tgz#94e536857b7acbbe6298fdfb8060c2d0d327191e"
-  integrity sha512-H4ngICa92YJH84F9tYxHE3p9URhbbdElkmgoZek3oen8EcumAf16I2cCYpYfUd97V4OCTfzYvr04dCEONLF+LQ==
+keycloakify@^11.14.0:
+  version "11.14.0"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.14.0.tgz#9e61020640d73270763092fa038e322681155b27"
+  integrity sha512-uxfHuCiuO+3wMjnWP+Ui13vPAKGa68djNny8XDUq5xu0gWUM1mxPDXpJEN/r7sP5KT/iXRxKTqrVmIEriF7LGg==
   dependencies:
     tsafe "^1.8.5"
 
