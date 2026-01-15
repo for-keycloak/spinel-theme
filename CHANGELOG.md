@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.1](https://github.com/for-keycloak/spinel-theme/compare/v1.0.0...v1.0.1) (2026-01-15)
+
+
+### Bug Fixes
+
+* **storybook:** copy public dir after build to avoid race condition ([0104412](https://github.com/for-keycloak/spinel-theme/commit/0104412d449cba26b0f6ffd4f07143bc25ba7077))
+
+
+### Dependencies
+
+* bump keycloakify in the minor-versions group ([89cde48](https://github.com/for-keycloak/spinel-theme/commit/89cde48da9c54b2b6d4761500d44d882f68c3387))
+* bump the minor-versions group across 1 directory with 2 updates ([4391a67](https://github.com/for-keycloak/spinel-theme/commit/4391a67c9437e9450652419f09651b9dd00b81cd))
+
 ## 1.0.0 (2026-01-12)
 
 
