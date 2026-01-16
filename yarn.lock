@@ -1883,10 +1883,10 @@
   resolved "https://registry.yarnpkg.com/@types/mdx/-/mdx-2.0.13.tgz#68f6877043d377092890ff5b298152b0a21671bd"
   integrity sha512-+OWZQfAYyio6YkJb3HLxDrvnx6SWWDbC0zVPfBRzUk0/nqoDyf6dNxQi3eArPe8rJ473nobTMQ/8Zk+LxJ+Yuw==
 
-"@types/node@^25.0.8":
-  version "25.0.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.0.8.tgz#e54e00f94fe1db2497b3e42d292b8376a2678c8d"
-  integrity sha512-powIePYMmC3ibL0UJ2i2s0WIbq6cg6UyVFQxSCpaPxxzAaziRfimGivjdF943sSGV6RADVbk0Nvlm5P/FB44Zg==
+"@types/node@^25.0.9":
+  version "25.0.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.0.9.tgz#81ce3579ddf67cae812a9d49c8a0ab90c82e7782"
+  integrity sha512-/rpCXHlCWeqClNBwUhDcusJxXYDjZTyE8v5oTO7WbL8eij2nKhUeU89/6xgjU7N4/Vh3He0BtyhJdQbDyhiXAw==
   dependencies:
     undici-types "~7.16.0"
 
@@ -3130,10 +3130,10 @@ keycloakify-emails@^3.3.1:
     esbuild "^0.24.0"
     properties-parser "^0.6.0"
 
-keycloakify@^11.14.0:
-  version "11.14.0"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.14.0.tgz#9e61020640d73270763092fa038e322681155b27"
-  integrity sha512-uxfHuCiuO+3wMjnWP+Ui13vPAKGa68djNny8XDUq5xu0gWUM1mxPDXpJEN/r7sP5KT/iXRxKTqrVmIEriF7LGg==
+keycloakify@^11.14.1:
+  version "11.14.1"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.14.1.tgz#0b58fea804822e8423b0eb0de2d0f4970bf03d4b"
+  integrity sha512-d2iXycoLVLWentVdmQk38F6XgPcd65sEEMK10iBeiW+m7qcqyE5Tb2aMKGTWVQ3Nw3Rwzeg24AGQEbIPu8MGYg==
   dependencies:
     tsafe "^1.8.5"
 
