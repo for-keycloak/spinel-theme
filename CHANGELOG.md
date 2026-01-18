@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/for-keycloak/spinel-theme/compare/v1.0.1...v1.0.2) (2026-01-18)
+
+
+### Dependencies
+
+* bump actions/setup-node in the minor-versions group ([e3ab69d](https://github.com/for-keycloak/spinel-theme/commit/e3ab69dd3fdb0ad01725baadfef8de6771019d4a))
+* bump the minor-versions group with 2 updates ([5db98be](https://github.com/for-keycloak/spinel-theme/commit/5db98be899fe5149cced32d6ac0386d2fb809824))
+
 ## [1.0.1](https://github.com/for-keycloak/spinel-theme/compare/v1.0.0...v1.0.1) (2026-01-15)
 
 
