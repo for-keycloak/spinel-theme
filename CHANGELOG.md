@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.0.3](https://github.com/for-keycloak/spinel-theme/compare/v1.0.2...v1.0.3) (2026-01-25)
+
+
+### Bug Fixes
+
+* **login:** align OTP template variables with Keycloak naming ([2e8296e](https://github.com/for-keycloak/spinel-theme/commit/2e8296ecef16777a3f47170eb6275d49ced37842))
+
+
+### Documentation
+
+* **version:** fix wrong file names ([c3e0eee](https://github.com/for-keycloak/spinel-theme/commit/c3e0eee837b113b2f4f3b03ed89974e0659979d7))
+
+
+### Dependencies
+
+* bump the minor-versions group across 1 directory with 3 updates ([f8639f1](https://github.com/for-keycloak/spinel-theme/commit/f8639f1bc097a32929decfb5cad70caa6e0d0fcb))
+* bump the minor-versions group with 2 updates ([777b9bc](https://github.com/for-keycloak/spinel-theme/commit/777b9bcab98bfc7dfb569f214d29370ae10cafd2))
+
+
+### Continuous Integration
+
+* **actions:** add explicit java install ([b4f2720](https://github.com/for-keycloak/spinel-theme/commit/b4f27209fd49098865829bc55398aeee3d6df241))
+
 ## [1.0.2](https://github.com/for-keycloak/spinel-theme/compare/v1.0.1...v1.0.2) (2026-01-18)
 
 
