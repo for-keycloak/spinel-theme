@@ -50,11 +50,11 @@ export const Template = ({ locale }: TemplateProps) => (
         </Text>
 
         <Section style={styles.buttonContainer}>
-          <Text style={codeStyle}>{exp("code" as any)}</Text>
+          <Text style={codeStyle}>{exp("otp" as any)}</Text>
         </Section>
 
         <Text style={styles.muted}>
-          This code will expire in {exp("ttl" as any)} minutes.
+          This code will expire in {exp("ttlMinutes" as any)} minutes.
         </Text>
 
         <Section style={styles.footer}>
