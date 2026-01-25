@@ -59,8 +59,18 @@ jobs:
           done
           ls -la
 
-      - name: Upload JAR to release
-        run: gh release upload ${{ needs.release-please.outputs.tag_name }} dist_keycloak/*.jar
+      - uses: sigstore/cosign-installer@faadad0cce49287aee09b3a48701e75088a2c6ad # v4.0.0
+
+      - name: Sign JARs with Cosign
+        run: |
+          for jar in dist_keycloak/*.jar; do
+            cosign sign-blob --yes \
+              --bundle "${jar}.sigstore.json" \
+              "$jar"
+          done
+
+      - name: Upload JARs and signatures to release
+        run: gh release upload ${{ needs.release-please.outputs.tag_name }} dist_keycloak/*.jar dist_keycloak/*.sigstore.json
         env:
           GH_TOKEN: ${{ github.token }}
 
