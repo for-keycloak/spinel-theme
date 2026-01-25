@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.4](https://github.com/for-keycloak/spinel-theme/compare/v1.0.3...v1.0.4) (2026-01-25)
+
+
+### Bug Fixes
+
+* **deps:** resolve esbuild security vulnerability via resolution ([d56e0de](https://github.com/for-keycloak/spinel-theme/commit/d56e0debb7b8cbbe710642d9d3acb0383fa85e1a))
+
+
+### Continuous Integration
+
+* **release:** add cosign signing for JAR artifacts ([9eb4b73](https://github.com/for-keycloak/spinel-theme/commit/9eb4b7377aaee5555a303ce3328166fe2df9343e))
+* **workflows:** harden permissions and use GITHUB_TOKEN ([380b573](https://github.com/for-keycloak/spinel-theme/commit/380b5736aeace105cf50b8c7970f94a7caf4fdca))
+
 ## [1.0.3](https://github.com/for-keycloak/spinel-theme/compare/v1.0.2...v1.0.3) (2026-01-25)
 
 
