@@ -39,3 +39,52 @@ export const WithError: Story = {
     })
   }
 };
+
+export const WithDeviceTrustPermanent: Story = {
+  name: "Device Trust - Permanent",
+  args: {
+    kcContext: createEmailOtpMock({
+      deviceTrustEnabled: true,
+      deviceTrustPermanent: true
+    })
+  }
+};
+
+export const WithDeviceTrustDays: Story = {
+  name: "Device Trust - 30 Days",
+  args: {
+    kcContext: createEmailOtpMock({
+      deviceTrustEnabled: true,
+      deviceTrustPermanent: false,
+      trustDurationUnitKey: "unitDayMany",
+      trustDurationValue: 30,
+      trustHideNumber: false
+    })
+  }
+};
+
+export const WithDeviceTrustWeek: Story = {
+  name: "Device Trust - 1 Week",
+  args: {
+    kcContext: createEmailOtpMock({
+      deviceTrustEnabled: true,
+      deviceTrustPermanent: false,
+      trustDurationUnitKey: "unitWeekOne",
+      trustDurationValue: 1,
+      trustHideNumber: false
+    })
+  }
+};
+
+export const WithDeviceTrustHiddenNumber: Story = {
+  name: "Device Trust - Hidden Number",
+  args: {
+    kcContext: createEmailOtpMock({
+      deviceTrustEnabled: true,
+      deviceTrustPermanent: false,
+      trustDurationUnitKey: "unitMonthMany",
+      trustDurationValue: 3,
+      trustHideNumber: true
+    })
+  }
+};

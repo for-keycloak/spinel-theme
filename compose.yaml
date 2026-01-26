@@ -21,7 +21,7 @@ services:
       - app-network
 
   playwright:
-    image: mcr.microsoft.com/playwright:v1.57.0-noble
+    image: mcr.microsoft.com/playwright:v1.58.0-noble
     volumes:
       - .:/app
     working_dir: /app

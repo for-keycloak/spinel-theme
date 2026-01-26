@@ -5,6 +5,12 @@ import type { KcContext as KcContextBase } from "keycloakify/login/KcContext";
 type KcContextLoginEmailOtp = KcContextBase.Common & {
   pageId: "login-email-otp.ftl";
   url: KcContextBase.Common["url"];
+  // Device trust feature (feat/trust-ips-devices branch)
+  deviceTrustEnabled?: boolean;
+  deviceTrustPermanent?: boolean;
+  trustDurationUnitKey?: string;
+  trustDurationValue?: number;
+  trustHideNumber?: boolean;
 };
 
 export type KcContext = KcContextBase | KcContextLoginEmailOtp;

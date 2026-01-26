@@ -19,14 +19,21 @@ export default function LoginEmailOtp(
     classes
   });
 
-  const { url } = kcContext;
+  const {
+    url,
+    deviceTrustEnabled,
+    deviceTrustPermanent,
+    trustDurationUnitKey,
+    trustDurationValue,
+    trustHideNumber
+  } = kcContext;
   // messagesPerField comes from Common but TypeScript needs a cast for plugin pages
   const messagesPerField = (kcContext as any).messagesPerField ?? {
     existsError: () => false,
     get: () => "",
     getFirstError: () => ""
   };
-  const { msg, msgStr } = i18n;
+  const { msg, msgStr, advancedMsg, advancedMsgStr } = i18n;
 
   const [isLoginButtonDisabled, setIsLoginButtonDisabled] = useState(false);
 
@@ -73,6 +80,36 @@ export default function LoginEmailOtp(
             />
           )}
         </div>
+
+        {deviceTrustEnabled && (
+          <div className={kcClsx("kcFormGroupClass")}>
+            <div className="checkbox">
+              <label>
+                <input
+                  type="checkbox"
+                  id="trust-device"
+                  name="trust-device"
+                  value="true"
+                />{" "}
+                {deviceTrustPermanent
+                  ? advancedMsg("dontAskForCodePermanently")
+                  : trustDurationUnitKey
+                    ? trustHideNumber
+                      ? advancedMsgStr(
+                          "dontAskForCodeFor",
+                          "",
+                          advancedMsgStr(trustDurationUnitKey)
+                        ).trim()
+                      : advancedMsg(
+                          "dontAskForCodeFor",
+                          String(trustDurationValue ?? 1),
+                          advancedMsgStr(trustDurationUnitKey)
+                        )
+                    : advancedMsg("dontAskForCodePermanently")}
+              </label>
+            </div>
+          </div>
+        )}
 
         <div id="kc-form-buttons" className={kcClsx("kcFormGroupClass")}>
           <input
