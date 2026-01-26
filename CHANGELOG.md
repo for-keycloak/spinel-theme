@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/for-keycloak/spinel-theme/compare/v1.0.4...v1.0.5) (2026-01-26)
+
+
+### Dependencies
+
+* bump @playwright/test in the minor-versions group ([e154a0d](https://github.com/for-keycloak/spinel-theme/commit/e154a0d37f9554a26261963e9f4d06245c0397c9))
+
 ## [1.0.4](https://github.com/for-keycloak/spinel-theme/compare/v1.0.3...v1.0.4) (2026-01-25)
 
 
