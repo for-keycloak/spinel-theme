@@ -35,7 +35,7 @@ A neo-brutalist Keycloak theme with automatic dark mode support.
 Download the latest JAR from [Releases](../../releases):
 
 <!-- x-release-please-start-version -->
-**Latest version: 1.0.5**
+**Latest version: 1.1.0**
 <!-- x-release-please-end -->
 
 - `spinel-theme-v{version}-for-kc-22-to-25.jar` - For Keycloak 22-25
