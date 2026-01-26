@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/for-keycloak/spinel-theme/compare/v1.0.5...v1.1.0) (2026-01-26)
+
+
+### Features
+
+* **email-otp:** sync theme with latest change in https://github.com/for-keycloak/email-otp-authenticator/pull/34 ([6f97f60](https://github.com/for-keycloak/spinel-theme/commit/6f97f60fa98f3cdb6eec0653c1b65b894636cab5))
+
 ## [1.0.5](https://github.com/for-keycloak/spinel-theme/compare/v1.0.4...v1.0.5) (2026-01-26)
 
 
