@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/for-keycloak/spinel-theme/compare/v1.1.0...v1.1.1) (2026-01-27)
+
+
+### Dependencies
+
+* bump the minor-versions group with 2 updates ([a21338e](https://github.com/for-keycloak/spinel-theme/commit/a21338e25b4215d2018d8a6ff2386bfb318841de))
+
 ## [1.1.0](https://github.com/for-keycloak/spinel-theme/compare/v1.0.5...v1.1.0) (2026-01-26)
 
 
