@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/for-keycloak/spinel-theme/compare/v1.1.3...v1.1.4) (2026-03-03)
+
+
+### Dependencies
+
+* bump actions/upload-artifact from 6.0.0 to 7.0.0 ([98f7fe9](https://github.com/for-keycloak/spinel-theme/commit/98f7fe9bdfa6277ae494ea25bc9913e8da3297c0))
+* bump the minor-versions group across 1 directory with 3 updates ([7b2966c](https://github.com/for-keycloak/spinel-theme/commit/7b2966c5b988b838a1017b4f7445c0d80a7d5bfd))
+
 ## [1.1.3](https://github.com/for-keycloak/spinel-theme/compare/v1.1.2...v1.1.3) (2026-02-25)
 
 
