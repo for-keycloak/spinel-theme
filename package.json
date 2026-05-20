@@ -17,18 +17,18 @@
     "test:update": "playwright test --update-snapshots"
   },
   "dependencies": {
-    "keycloakify": "^11.15.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "keycloakify": "^11.15.3",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "@playwright/test": "1.58.2",
+    "@playwright/test": "1.60.0",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/react": "^8.6.14",
     "@storybook/react-vite": "^8.6.14",
-    "@tailwindcss/vite": "^4.2.1",
-    "@types/node": "^25.3.2",
-    "@types/react": "^19.2.14",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.4",
     "jsx-email": "^2.8.4",
