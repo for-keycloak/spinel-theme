@@ -56,3 +56,32 @@ export const WithSkipLink: Story = {
     })
   }
 };
+
+export const WithClientBaseUrl: Story = {
+  name: "With Client Base URL",
+  args: {
+    kcContext: getKcContextMock({
+      pageId: "error.ftl",
+      overrides: {
+        client: { baseUrl: "https://example.com" }
+      }
+    })
+  }
+};
+
+// Clients without a Base URL (e.g. the traefik forward-auth client) send an empty string
+export const WithEmptyClientBaseUrl: Story = {
+  name: "With Empty Client Base URL",
+  args: {
+    kcContext: getKcContextMock({
+      pageId: "error.ftl",
+      overrides: {
+        message: {
+          type: "error",
+          summary: "Invalid username or password."
+        },
+        client: { baseUrl: "" }
+      }
+    })
+  }
+};
