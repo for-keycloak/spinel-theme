@@ -52,21 +52,9 @@ const AlertBox = ({
 };
 
 const CodeBox = ({ children }: { children: React.ReactNode }) => (
-  <span
-    style={{
-      backgroundColor: colors.cream,
-      border: `3px solid ${colors.black}`,
-      color: colors.black,
-      display: "inline-block",
-      fontSize: "32px",
-      fontWeight: "900",
-      letterSpacing: "0.3em",
-      padding: "16px 32px",
-      textAlign: "center"
-    }}
-  >
-    {children}
-  </span>
+  <p style={styles.codeContainer}>
+    <span style={styles.code}>{children}</span>
+  </p>
 );
 
 // ============================================
