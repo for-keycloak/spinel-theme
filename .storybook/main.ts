@@ -1,7 +1,11 @@
+import { fileURLToPath } from "node:url";
 import type { StorybookConfig } from "@storybook/react-vite";
 import { cpSync, existsSync } from "node:fs";
-import { resolve } from "node:path";
+import { resolve, dirname } from "node:path";
 import type { Plugin } from "vite";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Copy public directory after build to avoid race condition with staticDirs.
 // Storybook's staticDirs runs fs.cp() concurrently with Vite's build output,
@@ -23,10 +27,7 @@ function copyPublicPlugin(): Plugin {
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.stories.@(ts|tsx)"],
-  addons: [
-    "@storybook/addon-essentials",
-    "storybook-dark-mode"
-  ],
+  addons: ["storybook-dark-mode", "@storybook/addon-docs"],
   framework: {
     name: "@storybook/react-vite",
     options: {}
