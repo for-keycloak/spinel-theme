@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.1.5](https://github.com/for-keycloak/spinel-theme/compare/v1.1.4...v1.1.5) (2026-10-03)
+
+
+### Dependencies
+
+* **actions:** bump checkout, setup-node, setup-java, pages actions, upload-artifact and cosign-installer ([6b0b839](https://github.com/for-keycloak/spinel-theme/commit/6b0b839566448312caeff866744b957ff4b778db))
+* update keycloakify, react, storybook 10, vite 8, typescript 7, playwright and the rest to latest ([969d70d](https://github.com/for-keycloak/spinel-theme/commit/969d70d7e556c902c74025d6d630d837ab270fda))
+
+
+### Tests
+
+* **error:** cover the back-to-application link for clients with and without a base URL ([686b858](https://github.com/for-keycloak/spinel-theme/commit/686b858e7a9e82206d2696c073dd6726dd32ae77))
+
+
+### Continuous Integration
+
+* **release:** build the JARs on published releases, kidager-bot runs release-please ([b57a805](https://github.com/for-keycloak/spinel-theme/commit/b57a805b52898aae429a2b28d3b3489adf158217))
+* **test:** serve storybook with a plain static server so tests load the stories ([0b85282](https://github.com/for-keycloak/spinel-theme/commit/0b85282d2a404bc7aadcdccce10ac164daf02bb5))
+
 ## [1.1.4](https://github.com/for-keycloak/spinel-theme/compare/v1.1.3...v1.1.4) (2026-03-03)
 
 
