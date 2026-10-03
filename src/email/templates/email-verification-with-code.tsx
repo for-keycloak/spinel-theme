@@ -10,7 +10,7 @@ import {
 } from "jsx-email";
 import { GetSubject, GetTemplate, GetTemplateProps } from "keycloakify-emails";
 import { createVariablesHelper } from "keycloakify-emails/variables";
-import { styles, colors } from "../styles";
+import { styles } from "../styles";
 
 interface TemplateProps extends Omit<GetTemplateProps, "plainText"> {}
 
@@ -23,22 +23,12 @@ export const previewProps: TemplateProps = {
 
 export const templateName = "Email Verification (Code)";
 
-const codeStyle = {
-  backgroundColor: colors.cream,
-  border: `3px solid ${colors.black}`,
-  color: colors.black,
-  display: "inline-block",
-  fontSize: "32px",
-  fontWeight: "900",
-  letterSpacing: "0.3em",
-  padding: "16px 32px",
-  textAlign: "center" as const
-};
-
 export const Template = ({ locale }: TemplateProps) => (
   <Html lang={locale}>
     <Head />
-    <Preview>Your verification code for {exp("realmName")}</Preview>
+    <Preview>
+      Your {exp("realmName")} verification code: {exp("code" as any)}
+    </Preview>
     <Body style={styles.body}>
       <Container style={styles.container}>
         <div style={styles.headerDecoration} />
@@ -50,7 +40,9 @@ export const Template = ({ locale }: TemplateProps) => (
         </Text>
 
         <Section style={styles.buttonContainer}>
-          <Text style={codeStyle}>{exp("code" as any)}</Text>
+          <Text style={styles.codeContainer}>
+            <span style={styles.code}>{exp("code" as any)}</span>
+          </Text>
         </Section>
 
         <Text style={styles.muted}>
@@ -67,8 +59,18 @@ export const Template = ({ locale }: TemplateProps) => (
   </Html>
 );
 
+// Written by hand so the code sits on the same line as "verification code",
+// which helps mail apps (e.g. Gmail's "Copy code" button) recognise it
+const plainText = `Your ${exp("realmName")} verification code: ${exp("code" as any)}
+
+This code will expire in ${exp("linkExpirationFormatter(linkExpiration)")}.
+
+If you didn't request this code, you can safely ignore this email.
+`;
+
 export const getTemplate: GetTemplate = async (props) => {
-  return await render(<Template {...props} />, { plainText: props.plainText });
+  if (props.plainText) return plainText;
+  return await render(<Template {...props} />);
 };
 
 export const getSubject: GetSubject = async () => {

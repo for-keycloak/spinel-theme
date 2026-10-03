@@ -17,7 +17,7 @@ export const styles = {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     margin: "0",
-    padding: "40px 20px"
+    padding: "32px 12px"
   },
 
   container: {
@@ -26,7 +26,7 @@ export const styles = {
     boxShadow: `8px 8px 0 ${colors.black}`,
     margin: "0 auto",
     maxWidth: "600px",
-    padding: "40px"
+    padding: "32px 24px"
   },
 
   headerDecoration: {
@@ -63,9 +63,36 @@ export const styles = {
     fontSize: "14px",
     fontWeight: "700",
     letterSpacing: "0.05em",
-    padding: "16px 32px",
+    padding: "16px 24px",
     textDecoration: "none",
     textTransform: "uppercase" as const
+  },
+
+  // Holds the code box. Its plain font size is the fallback for clients
+  // that drop min() (Outlook, Gmail app with non-Google accounts)
+  codeContainer: {
+    fontSize: "32px",
+    lineHeight: "1.2",
+    margin: "0",
+    textAlign: "center" as const
+  },
+
+  // Hugs the code, never wider than the card: the text scales with the
+  // screen up to 32px, and a code too long for the screen wraps
+  code: {
+    backgroundColor: colors.cream,
+    border: `3px solid ${colors.black}`,
+    boxSizing: "border-box" as const,
+    color: colors.black,
+    display: "inline-block",
+    fontSize: "min(32px, 7vw)",
+    fontWeight: "900",
+    letterSpacing: "0.25em",
+    maxWidth: "100%",
+    padding: "16px 24px",
+    // Balances the trailing letter-spacing after the last character
+    textIndent: "0.25em",
+    wordBreak: "break-all" as const
   },
 
   buttonContainer: {
