@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { styles, colors } from "../email/styles";
 
 // Browser-compatible email preview components (jsx-email only works server-side)

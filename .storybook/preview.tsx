@@ -1,5 +1,5 @@
-import type { Preview } from "@storybook/react";
-import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
+import type { Preview } from "@storybook/react-vite";
+import { INITIAL_VIEWPORTS } from "storybook/viewport";
 import "../src/index.css";
 
 const preview: Preview = {
@@ -11,7 +11,7 @@ const preview: Preview = {
       }
     },
     viewport: {
-      viewports: INITIAL_VIEWPORTS
+      options: INITIAL_VIEWPORTS
     },
     options: {
       storySort: {
