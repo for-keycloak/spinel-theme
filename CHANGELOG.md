@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/for-keycloak/spinel-theme/compare/v1.1.5...v1.1.6) (2026-10-03)
+
+
+### Bug Fixes
+
+* **email:** fit narrow phone screens and put the code in the preview and plain text ([5075654](https://github.com/for-keycloak/spinel-theme/commit/50756544a71dcbd055d3e23f748b870f1c7750b9))
+
 ## [1.1.5](https://github.com/for-keycloak/spinel-theme/compare/v1.1.4...v1.1.5) (2026-10-03)
 
 
