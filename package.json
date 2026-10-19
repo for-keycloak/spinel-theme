@@ -17,25 +17,25 @@
     "test:update": "playwright test --update-snapshots"
   },
   "dependencies": {
-    "keycloakify": "^11.16.1",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "keycloakify": "^11.16.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@playwright/test": "1.63.0",
-    "@storybook/addon-docs": "^10.6.1",
-    "@storybook/react-vite": "^10.6.1",
+    "@playwright/test": "1.64.1",
+    "@storybook/addon-docs": "^10.6.2",
+    "@storybook/react-vite": "^10.6.2",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/node": "^26.6.4",
+    "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.1",
+    "@vitejs/plugin-react": "^6.1.2",
     "jsx-email": "^3.2.1",
     "keycloakify-emails": "^3.6.0",
-    "storybook": "^10.6.1",
+    "storybook": "^10.6.2",
     "storybook-dark-mode": "^5.0.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
-    "vite": "^8.3.2"
+    "vite": "^8.3.4"
   }
 }
